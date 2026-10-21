@@ -56,3 +56,16 @@ class Repositorio:
             total += 1
             commit_atual = commit_atual.pai
         return total
+
+
+repositorio = Repositorio("meu-projeto", "Nicholas Ferreira - RA 6326117")
+
+repositorio.log()
+
+repositorio.commitar("Cria o projeto")
+repositorio.commitar("Adiciona o README")
+repositorio.commitar("Corrige o titulo do README")
+
+repositorio.log()
+
+print(repositorio.total_de_commits())
